@@ -1,6 +1,8 @@
 # BarberShop
 Proyecto Encargo N°2
 
+El Api Rest Framework esta en la parte del Administrador
+
 Login Administrador:
 usuario= eduardo 
 contraseña= eduardo
