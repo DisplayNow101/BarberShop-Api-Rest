@@ -1,0 +1,165 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static 'css/font.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS/Estilo pagina-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+
+    <!-- Ionicons web -->
+    <link href="//unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+
+    <!--FontAwesome-->
+    <script src="//kit.fontawesome.com/0dac381c07.js"></script>
+
+    <title>Bootstrap Barbershop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+        <!--sticky top, para que el nav menu se pegue en la part de arriba(hay que ver si funciona)-->
+        <div class="container">
+            <img src="{% static 'images/favicon.png' %}" class="pagina-logo" alt="logo">
+            <button class="navbar-toggler navbar-toggler-rigth" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center">
+                    <!--Agregue la propiedad para que se vean en el centro los textos del nav-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3" href="#productos">Productos</a>
+                    </li>
+                    <liv class="nav-item">
+                        <a class="nav-link ml-3" href="{% url 'logout' %}">Cerrar sesión</a>
+                    </liv>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="{% static 'images/imagen-fondo1.jpg' %}">
+                    <div class="carousel-container">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bienvenido a barbershop</h5>
+                            <p>"Excelente lugar y atención al publico".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="acomodo bg-grey">
+        <div class="container">
+            <div class="content-center">
+                <h2>Nuestros servicios</h2>
+                <p class="letra">Servicios o Productos que estan disponibles en barbershop</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="imagen-servicios">
+                        <img src="{% static 'images/imagen2.png' %}" class="img-fluid"
+                            alt="champu barba">
+                        <div class="servicios-detalles p-3">
+                            <h3 class="content-center">Aplicamos un champu para la barba</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="imagen-servicios">
+                        <img src="{% static 'images/imagen1.png' %}" class="img-fluid" alt="laca">
+                        <div class="servicios-detalles p-3">
+                            <h3 class="content-center">La laca para una mejor firmeza</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="acomodo bg-grey-color">
+
+        <div class="container">
+            <h1 class="text-center">Registro de productos</h1>
+            <h4 class="text-center"><a class="ticket1" href="{% url 'listarProductos' %}">Click para ver los productos</a></h4>
+            <div class="row">
+                <div class="col-md-12 topmargin-sm">
+                    <img src="{% static 'images/barber_1.jpg' %}" class="img-fluid" alt="barbero">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Algo nuestro</h1>
+                    <p>Somos una barberia dedicada 100% a nuestros clientes y a su estetica. Respetamos su estilo y las
+                        deciciones que tome para poder llevar a cabo su proyecto de belleza
+                    </p>
+                </div>
+
+                <div class="colum2">
+                    <h1>Redes Sociales</h1>
+                    <div class="row">
+                        <label><a href="#" class="ticket1">✔</a> Siguenos en Facebook</label>
+                    </div>
+                    <div class="row">
+                        <label><a href="#" class="ticket2">✔</a> Siguenos en Instagram</label>
+                    </div>
+                    <div class="row">
+                        <label><a href="#" class="ticket3">✔</a> Contactanos por whatsapp</label>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyrigth">
+                    Bootstrap BarberShop 2019 Copyright © Todos los derechos reservados
+                </div>
+                <div class="information">
+                    Informacion Compañia | Provacion y Politica | Terminos y Condiciones
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

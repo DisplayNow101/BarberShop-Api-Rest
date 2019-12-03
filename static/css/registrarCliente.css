@@ -1,0 +1,27 @@
+.bg-black{
+    background-color: #343a40;
+}
+
+html{
+    background-color: #343a40;
+}
+
+.white{
+    color: white;
+}
+
+.white:hover{
+    color: white;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.btn{
+    background-color: #21252b;
+}
+
+.btn-color{
+    color: white;
+}

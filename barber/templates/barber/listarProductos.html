@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/producto.css' %}">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Listar Productos</title>
+</head>
+
+<body>
+    <section class="body">
+        <div class="container body">
+            <h1 class="white text-center">Registro De Productos</h1>
+            <h1 class="white text-center"><a class="ml-3 white" href="/login/cliente">Volver</a></h1>
+            <table class="table table-bordered bg-table">
+                <div class="container">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td class="text-center white">Foto</td>
+                            <td class="text-center white">Nombre Del Producto</td>
+                        </tr>
+
+                    </thead>
+                    <tbody class="white">
+                        {% if object_list %}
+                        {% for fotos in object_list %}
+                        <tr>
+                            <td class="text-center bg-white"><img src="{{ fotos.foto.url}}"></td>
+                            <td class="black bg-white"><h1 class="text-align">{{ fotos.titulo }}</h1></td>
+                        </tr>
+                        {% endfor %}
+
+                        {% else %}
+                        {% endif %}
+                    </tbody>
+                </div>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>

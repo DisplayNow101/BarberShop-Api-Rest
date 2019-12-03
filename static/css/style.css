@@ -1,0 +1,287 @@
+                                                           :root {
+                                                               --light-color: #ffffff;
+                                                               --grey-color: #808080;
+                                                           }
+
+                                                           .ticket1 {
+                                                               color: white;
+                                                           }
+
+                                                           .ticket1:hover {
+                                                               color: white;
+                                                           }
+
+                                                           .ticket2 {
+                                                               color: white;
+                                                           }
+
+                                                           .ticket2:hover {
+                                                               color: white;
+                                                           }
+
+                                                           .ticket3 {
+                                                               color: white;
+                                                           }
+
+                                                           .ticket3:hover {
+                                                               color: white;
+                                                           }
+
+                                                           label {
+                                                               color: #ffffff;
+                                                           }
+
+                                                           .full-width {
+                                                               width: 100%;
+                                                           }
+
+                                                           .full-height {
+                                                               height: 30px;
+                                                           }
+
+                                                           .topmargin-xs {
+                                                               margin-top: 15px;
+                                                           }
+
+                                                           .topmargin-sm {
+                                                               margin-top: 30px;
+                                                           }
+
+                                                           .topmargin-lg {
+                                                               margin-top: 60px;
+                                                           }
+
+                                                           .btn-color-contact {
+                                                               background-color: #ffffff;
+                                                               color: #343a40;
+                                                               border: 2px solid #343a40;
+                                                           }
+
+                                                           .btn-color-contact:hover {
+                                                               color: #343a40;
+                                                           }
+
+                                                           .color {
+                                                               color: #343a40;
+                                                           }
+
+                                                           .color:hover {
+                                                               color: #343a40;
+                                                           }
+
+                                                           .btn-found {
+                                                               background-color: #343a40;
+                                                               color: #ffffff;
+                                                               border: 2px solid #343a40;
+                                                           }
+
+                                                           .btn-found:hover {
+                                                               color: #ffffff;
+                                                           }
+
+                                                           .acomodo {
+                                                               padding: 50px 0;
+                                                           }
+
+                                                           .bg-grey {
+                                                               background-color: #343a40;
+                                                           }
+
+                                                           .bg-grey-color {
+                                                               background-color: var(--grey-color);
+                                                           }
+
+                                                           .bg-light {
+                                                               background-color: #ffffff;
+                                                           }
+
+                                                           h5, p {
+                                                               color: #ffffff;
+                                                           }
+
+                                                           h3 {
+                                                               color: #ffffffd0;
+                                                           }
+
+                                                           h1, h4 {
+                                                               color: #ffffffd0;
+                                                           }
+
+                                                           .letra {
+                                                               font-size: 20px;
+                                                               font-weight: 300;
+                                                               color: #ffffffd0;
+                                                           }
+
+                                                           h2 {
+                                                               color: #ffffffd0;
+                                                               font-size: 54px;
+                                                               font-weight: 600;
+                                                           }
+
+                                                           body {
+                                                               background-color: #343a40;
+                                                               font-family: 'Manjari', sans-serif;
+                                                               position: relative;
+                                                           }
+
+                                                           .navbar {
+                                                               background-color: rgba(24, 22, 22, 0.863);
+                                                               min-height: 75px;
+                                                           }
+
+                                                           .imagen-servicios {
+                                                               margin-bottom: 4rem;
+                                                           }
+
+                                                           .nav-link {
+                                                               color: #ffffff;
+                                                           }
+
+                                                           .nav-link:hover {
+                                                               color: #ffffff;
+                                                           }
+
+                                                           .pagina-logo {
+                                                               min-width: 55px;
+                                                               max-width: 10px;
+                                                           }
+
+                                                           .content-center {
+                                                               max-width: 800px;
+                                                               margin: 0 auto 60px auto;
+                                                               text-align: center;
+                                                           }
+
+                                                           .carousel-item {
+                                                               height: 90vh;
+                                                               min-height: 300px;
+                                                               background: no-repeat center center scroll;
+                                                               -webkit-background-size: cover;
+                                                               -moz-background-size: cover;
+                                                               -o-background-size: cover;
+                                                               background-size: cover;
+                                                           }
+
+                                                           @media (max-width: 575.98px) {}
+
+                                                           @media (min-width: 576px) and (max-width: 767.98px) {}
+
+                                                           @media (min-width: 768px) and (max-width: 991.98px) {}
+
+                                                           @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+                                                           @media (min-width: 1200px) {}
+
+                                                           .footer {
+                                                               width: 100%;
+                                                               background: #202020;
+                                                               color: white;
+                                                           }
+
+                                                           .container-footer-all {
+                                                               max-width: 1200px;
+                                                               margin: auto;
+                                                               padding: 40px;
+                                                           }
+
+                                                           .container-body {
+                                                               display: flex;
+                                                               justify-content: space-between;
+                                                           }
+
+                                                           .colum1 {
+                                                               max-width: 550px;
+                                                           }
+
+                                                           .colum1 h1 {
+                                                               font-size: 22px;
+                                                           }
+
+                                                           .colum p {
+                                                               font-size: 14px;
+                                                               color: #c7c7c7;
+                                                               margin-top: 20px;
+                                                           }
+
+                                                           .colum2 {
+                                                               max-width: 600px;
+                                                           }
+
+                                                           .colum2 h1 {
+                                                               font-size: 22px;
+                                                           }
+
+                                                           .row {
+                                                               margin-top: 10px;
+                                                               display: flex;
+                                                           }
+
+                                                           .row label {
+                                                               margin-left: 10px;
+                                                               color: #c7c7c7;
+                                                               margin-top: 10px;
+                                                           }
+
+                                                           .container-footer {
+                                                               width: 100%;
+                                                               background: #101010;
+                                                               padding: 20px;
+                                                           }
+
+                                                           .copyrigth {
+                                                               color: #c7c7c7;
+                                                           }
+
+                                                           .copyrigth a {
+                                                               text-decoration: none;
+                                                               color: white;
+                                                               font-weight: bold;
+                                                           }
+
+                                                           .information a {
+                                                               text-decoration: none;
+                                                               color: #c7c7c7;
+                                                           }
+
+                                                           .footer {
+                                                               display: flex;
+                                                               justify-content: space-between;
+                                                               max-width: 1200px;
+                                                               margin: auto;
+                                                               padding: 40px;
+                                                           }
+
+                                                           @media screen and (max-width: 1100px) {
+                                                               .container-body {
+                                                                   flex-wrap: wrap;
+                                                               }
+                                                               .column2 {
+                                                                   margin-top: 40px;
+                                                               }
+                                                           }
+
+                                                           #whtsp-icon {
+                                                               width: 35px;
+                                                               height: 35px;
+                                                           }
+
+                                                           .icon {
+                                                               color: white;
+                                                               text-decoration: none;
+                                                               padding: .7rem;
+                                                               display: flex;
+                                                               transition: all .5s;
+                                                           }
+
+                                                           .icon-facebook {
+                                                               background: #2e406e;
+                                                           }
+
+                                                           .icon-instagram {
+                                                               background: #3F60A5;
+                                                           }
+
+                                                           .icon-whatsapp {
+                                                               background: #2e406e;
+                                                           }
